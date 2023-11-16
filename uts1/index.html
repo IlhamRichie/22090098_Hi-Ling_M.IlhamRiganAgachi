@@ -45,7 +45,7 @@
       color: #D0E7D2;
       border-radius: 10px;
       margin-bottom: 20px; /* Jarak di bawah blok */
-      float: right;
+      float: left;
       box-sizing: border-box;
     }
 
@@ -56,6 +56,24 @@
 
     .clear {
       clear: both;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    th, td {
+      border: 1px solid #618264;
+      padding: 8px; /* tambahkan padding untuk memberikan ruang di dalam sel */
+    }
+
+    /* tambahkan properti berikut jika ingin memberikan warna latar belakang pada header tabel */
+    th {
+      background-color: #79AC78;
+      color: #D0E7D2;
     }
 
     form {
@@ -117,7 +135,7 @@
   </div>
   
   <div class="content" id="content">
-    <h2 Wawasan Transportasi Berkelanjutan</h2>
+    <h2> Wawasan Transportasi Berkelanjutan </h2>
     <img src="foto\Untitled design(15).png" alt="Alam" width="">
     <p>Gali lebih dalam ke dalam informasi tentang transportasi berkelanjutan dan dampak positifnya pada lingkungan. Mulai dari kemajuan terbaru dalam teknologi hijau hingga tips memilih opsi komuting yang ramah lingkungan, kami punya semuanya.</p>
 
@@ -147,7 +165,38 @@
     </div>
 
     <div class="clear"></div>
-    
+
+    <h2>Transportasi Berkelanjutan</h2>
+        
+    <table>
+        <thead>
+            <tr>
+                <th>Jenis Transportasi</th>
+                <th>Deskripsi</th>
+                <th>Keunggulan</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Transportasi Publik</td>
+                <td>Bus, Kereta, dan MRT</td>
+                <td>Mengurangi kemacetan, ramah lingkungan</td>
+            </tr>
+            <tr>
+                <td>Transportasi Berbagi</td>
+                <td>Gojek, Grab, dan sejenisnya</td>
+                <td>Effisien, mengurangi polusi</td>
+            </tr>
+            <tr>
+                <td>Transportasi Ramah Lingkungan</td>
+                <td>Sepeda dan Mobil Listrik</td>
+                <td>Nol emisi, berkelanjutan</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="clear"></div>
+
     <form>
       <label for="name">Nama:</label>
       <input type="text" id="name" name="name"><br><br>
